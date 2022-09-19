@@ -1,0 +1,98 @@
+
+.blog-part {
+	margin-top: 100px;
+
+}
+
+.blog-part .title {
+	text-align: center;
+}
+
+.blog-part .title p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #0f2f44;
+}
+
+.blog-part .title h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 32px;
+	color: #0f2f44;
+}
+
+.blog-part .item {
+	width: 30%;
+	background: #f5f5f5;
+	box-sizing: border-box;
+	padding: 20px;
+	transition: .4s;
+	border-radius: 5px;
+	float: left;
+	margin-right: 35px;
+}
+
+.blog-part .item .main .image img {
+	width: 100%;
+}
+
+.blog-part .item .main .text a {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #777777;
+}
+
+.blog-part .item .main .text p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	/*	color: #777777;*/
+}
+
+.blog-part .item .main .text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	/*	color: #222222;*/
+}
+
+.blog-part .item:hover {
+	background: #0f2f44;
+	color: #ffffff;
+	cursor: pointer
+}
+
+.blog-part .item:hover .main .text a {
+	color: #fff;
+}
+.blog-part .item .main i{
+	margin-left: 5px;
+}
+
+
+
+
+.blog-part .btn {
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+.blog-part .btn a {
+	display: inline-block;
+	background: #fff;
+	padding: 15px 20px;
+	color: #000000;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	transition: .4s;
+	box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.blog-part .btn a:hover {
+	background: #ffc107;
+}

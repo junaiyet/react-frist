@@ -1,0 +1,78 @@
+
+.service-part .title {
+	text-align: center;
+}
+
+.service-part .title h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+
+	color: #0f2f44;
+}
+
+.service-part .title h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 32px;
+	font-weight: 400;
+	color: #0f2f44;
+}
+
+.service-part .item {
+	width: 30%;
+	margin: 0 10px;
+	margin-top: 50px;
+	position: relative;
+	float: left;
+}
+
+.service-part .item .main {
+	width: 100%;
+	height: 100%;
+
+}
+
+.service-part .item .main .image {
+	width: 25%;
+	background: #cecece;
+	float: left;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.service-part .item .main .text {
+	width: 75%;
+	background: #d8d8d8;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+
+}
+
+.service-part .item .overlay {
+	width: 0%;
+	height: 100%;
+	background: #0f2f44;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .4s;
+	opacity: 0;
+	text-align: center;
+	color: #ffffff;
+	transition: .4s;
+	cursor: pointer;
+}
+
+.service-part .item:hover .overlay {
+	width: 100%;
+	opacity: 1;
+
+}
+
+.service-part .item .overlay .overlay-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}

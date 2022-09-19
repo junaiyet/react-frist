@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clr {
+	clear: both;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}

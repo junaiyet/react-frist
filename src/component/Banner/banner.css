@@ -1,0 +1,62 @@
+
+.banner-part {
+	background-repeat: no-repeat;
+	background-position: calc();
+	background-position: cover;
+	padding: 100px 0;
+}
+
+.banner-part h4 {
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(15, 47, 68);
+	font-size: 50px;
+	font-weight: 400;
+
+
+
+}
+
+.banner-part h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 80px;
+	font-weight: 400;
+	color: #0f2f44;
+	text-transform: uppercase;
+	margin-top: -30px;
+}
+
+.banner-part h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	color: #aab0d8;
+	font-weight: 400;
+	letter-spacing: 12px;
+	margin-top: -12px;
+}
+
+.banner-part p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 466px;
+	margin-top: 15px;
+}
+
+.banner-part a {
+	display: inline-block;
+	padding: 15px 20px;
+	background: #8484bf;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid #8484bf;
+	transition: .4s;
+}
+
+.banner-part a:hover {
+	background: #ffff;
+	color: #8484bf;
+}

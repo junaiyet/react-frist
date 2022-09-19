@@ -1,0 +1,157 @@
+
+.footer-part {
+	background: #f5f5f5;
+	;
+	margin-top: 50px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	box-shadow: 0px -4px 39px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer-part h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.footer-part .logo {
+	width: 25%;
+	float: left;
+}
+
+.footer-part .logo p {
+	padding: 30px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.footer-part .logo i {
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #0f2f44;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 10px;
+	transition: .7s;
+	cursor: pointer;
+color: #0f2f44;
+}
+
+.footer-part .logo i:hover {
+	background: #0f2f44;
+	color: #fff;
+
+}
+
+.footer-part .contact {
+	width: 25%;
+	float: left;
+
+
+}
+
+.footer-part .contact ul li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400px;
+	color: #777777;
+	position: relative;
+	padding-left: 40px;
+	margin-top: 30px;
+
+}
+
+.footer-part .contact ul li i {
+	font-size: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 7px;
+}
+
+.footer-part .important {
+	width: 14%;
+	float: left;
+}
+
+.footer-part .important ul li {
+	color: #444444;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 22px;
+	transition: .4s;
+	cursor: pointer;
+}
+
+.footer-part .important ul li:hover {
+	padding-left: 20px;
+}
+
+.footer-part .flikr {
+	width: 36%;
+	float: left;
+
+}
+
+.footer-part .flikr .filckr_heading {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+/*
+.footer-part .flikr .filckr_item{
+margin-top: 30px;
+	margin-right: 10px;
+}
+*/
+.footer-part .flikr .filckr_item .filckr_item_img {
+	float: left;
+	width: 21%;
+	margin-right: 15px;
+	margin-bottom: 15px;
+
+}
+
+.footer-part .flikr .filckr_item .filckr_item_img img {
+	width: 100%;
+}
+
+/*footer-part end*/
+
+
+
+
+.end-part {
+	background: #f8f8f8;
+	padding: 11px 0;
+	box-shadow: inset 0px 40px 166px -88px rgba(0,0,0,0.2);	
+}
+.end-part ul{
+	text-align: center;
+}
+.end-part ul li {
+	display: inline-block;
+	padding-right: 13px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #777777;
+	margin-right: 10px;
+	border-right: 1px solid #343a40;
+}
+.end-part ul li:nth-last-child(1) {
+ border-right: 0;
+/*	border-right: 2px solid transparent;*/
+	
+}
+
+.end-part ul li span{
+	color:#fcc512;
+}
+

@@ -1,0 +1,23 @@
+
+.btn {
+	display: inline-block;
+	padding: 8px 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	border-radius: 5px;
+	color: #0f2f44;
+	margin-top: 30px;
+	box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.1);
+	margin-right: 20px;
+	background: #ffffff;
+	transition: .4s;
+
+}
+
+.btn:hover {
+	background: #fcc512;
+}
+.btn-area{
+	text-align: center;
+}

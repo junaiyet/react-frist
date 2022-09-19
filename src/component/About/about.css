@@ -1,0 +1,68 @@
+.about-part {
+	margin-top: 100px;
+}
+
+.about-part .text {
+	width: 50%;
+	float: left;
+}
+
+.about-part .text .title h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #0f2f44;
+}
+
+.about-part .text .title h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 32px;
+	font-weight: 300;
+	color: #0f2f44
+}
+
+.about-part .text .details p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #0f2f44;
+	margin-top: 40px;
+}
+
+.about-part .text .details ul {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #0f2f44;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.about-part .text .details ul li {
+	margin-bottom: 20px;
+}
+
+.about-part .text .details a {
+	display: inline-block;
+	padding: 8px 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	border-radius: 5px;
+	color: #0f2f44;
+	margin-top: 30px;
+	box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.1);
+	margin-right: 20px;
+	background: #ffffff;
+	transition: .4s;
+
+}
+
+.about-part .text .details a:hover {
+	background: #fcc512;
+}
+
+.about-part .img {
+	width: 50%;
+	float: left;
+}

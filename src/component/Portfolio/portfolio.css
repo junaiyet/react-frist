@@ -1,0 +1,83 @@
+
+.port-part {
+	margin: 50px 0;
+
+}
+
+.port-part .title {
+	text-align: center;
+}
+
+.port-part .title p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #0f2f44;
+}
+
+.port-part .title h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 32px;
+	font-weight: 400;
+	color: #0f2f44
+}
+
+.port-part .item {
+	width: 30%;
+	float: left;
+	position: relative;
+	margin: 0 10px;
+
+}
+
+.port-part .item .imge img {
+	width: 100%;
+}
+
+.port-part .item .overlay {
+	width: 100%;
+	opacity: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	background: #f5eded;
+	transition: .4s;
+	padding: 15px 0;
+	box-sizing: border-box;
+
+
+}
+
+.port-part .item:hover .overlay {
+	opacity: 1;
+
+}
+
+.port-part  {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.port-part .btn{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.port-part .btn a {
+	margin-top: 40px;
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	color: #0f2f44;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	border-radius: 2px;
+	font-weight: 400;
+	transition: .4s;
+	box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+
+}
+
