@@ -9,6 +9,8 @@ import Testimonial from "./component/Testimonial/Testimonial";
 import Blog from "./component/Blog/Blog";
 import Footer from "./component/Footer/Footer";
 import {useState,useEffect}  from 'react'
+import { getDatabase, ref, set } from "firebase/database";
+
 //Bootstrap
 import {Button,Container,Form } from 'react-bootstrap';
 
@@ -29,9 +31,11 @@ function App() {
   //   setShow(!show)
     
   // }
+  const db = getDatabase();
   let [batchname,setBatchName] = useState("")
   let [classname,setClassName] = useState("")
   let [classtopic,setClassTopic] = useState("")
+  // let [present,setPresent] = useState([])
   // let [attendace,setAttendace] = useState(true)
   let handelBatchName=(e)=>{
     setBatchName(e.target.value)
@@ -42,7 +46,15 @@ function App() {
   let handelClassTopic=(e)=>{
     setClassTopic(e.target.value)
   }
+  let arr =[]
   let handelAttendace=(name)=>{
+    if(arr.indexOf(name) == -1){
+      arr.push(name);
+    }else{
+      arr.splice(arr.indexOf(name),1)
+    }
+
+    // setPresent(arr)
     // if(attendace){
     //   setAttendace(false);
     //   console.log(attendace,name);
@@ -50,7 +62,6 @@ function App() {
     //   setAttendace(true);
     //   console.log(attendace,name);
     // }
-    console.log(name)
   };
   let handleSubmit =(e)=>{
     e.preventDefault();
@@ -58,10 +69,12 @@ function App() {
       batchname : batchname,
       classname : classname,
       classtopic : classtopic,
-      // present : [],
+      present : arr,
     }
+    set(ref(db, 'present'),info);
     console.log(info)
   }
+
   return (
   //  <>
     /* <Navber/>
@@ -124,5 +137,5 @@ function App() {
 //   height:"300px",
 //   marginTop:"20px",
 // }
-//16+minit part 2
+//43+minit part 2
 export default App;
