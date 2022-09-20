@@ -9,10 +9,10 @@ import Testimonial from "./component/Testimonial/Testimonial";
 import Blog from "./component/Blog/Blog";
 import Footer from "./component/Footer/Footer";
 import {useState,useEffect}  from 'react'
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref,push, set,onValue } from "firebase/database";
 
 //Bootstrap
-import {Button,Container,Form } from 'react-bootstrap';
+import {Button,Container,Form,Table } from 'react-bootstrap';
 
 
 function App() {
@@ -35,6 +35,8 @@ function App() {
   let [batchname,setBatchName] = useState("")
   let [classname,setClassName] = useState("")
   let [classtopic,setClassTopic] = useState("")
+  let [details,setDetails] = useState([])
+  let [check,setCheck] = useState(false)
   // let [present,setPresent] = useState([])
   // let [attendace,setAttendace] = useState(true)
   let handelBatchName=(e)=>{
@@ -71,9 +73,21 @@ function App() {
       classtopic : classtopic,
       present : arr,
     }
-    set(ref(db, 'present'),info);
+    set(push(ref(db, 'present')),info).then(()=>{
+      setCheck(!check);
+    });
     console.log(info)
   }
+  
+  useEffect(()=>{
+    let attarr = []
+    onValue(ref(db, 'present'), (snapshot) => {
+      snapshot.forEach(item=>{
+        attarr.push(item.val())
+      })
+      setDetails(attarr)
+    });
+  },[check])
 
   return (
   //  <>
@@ -126,6 +140,35 @@ function App() {
         Submit
       </Button>
     </Form>
+
+    <Table striped bordered hover>
+      <thead>
+        <tr>
+          <th>Class Number</th>
+          <th>Student name</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {details.map(item=>(
+      
+          <tr>
+            <td>{item.classname}</td>
+     {     item.present.map(att=>(
+            <>
+          
+          <td>{att}</td>
+            
+            </>
+       
+          ))}
+        </tr>
+
+
+        ))}
+
+      </tbody>
+    </Table>
       </Container>
     </>
 
